@@ -139,7 +139,7 @@ public class HomeManager : MonoBehaviour
     public void OnClickMarkerButton()
     {
         Debug.Log("Clicked Marker Button.");
-        audioSource.PlayOneShot(clickButton);
+        if (count == 0) audioSource.PlayOneShot(clickButton);
 
         // ピンを配置
         Transform camTran = arCamera.transform;
@@ -252,5 +252,11 @@ public class HomeManager : MonoBehaviour
     {
         audioSource.PlayOneShot(clickButton);
         helpCanvas.SetActive(false);
+    }
+
+    public void OnClickCrossButton()
+    {
+        audioSource.PlayOneShot(clickButton);        
+        settingCanvas.SetActive(false);        
     }
 }
