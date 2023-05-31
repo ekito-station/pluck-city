@@ -144,7 +144,8 @@ public class HomeManager : MonoBehaviour
         // ピンを配置
         Transform camTran = arCamera.transform;
         Vector3 curPos = camTran.position + front * camTran.forward;
-        Instantiate(markerPrefab, curPos, Quaternion.identity);        
+        GameObject marker =  Instantiate(markerPrefab, curPos, Quaternion.identity);
+        marker.transform.LookAt(camTran);   // カメラの方を向かせる        
         Debug.Log("Placed a marker.");
 
         // 2つ目以降のピンなら弦を張る

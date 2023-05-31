@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 41359581826814037}
   - component: {fileID: 2070732353730010627}
   - component: {fileID: 6339720472144072380}
-  - component: {fileID: 7272848733321039803}
+  - component: {fileID: 9119022680760890009}
   m_Layer: 0
   m_Name: GuitarString
   m_TagString: Guitar
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7272848733321039803
+--- !u!114 &9119022680760890009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,6 +106,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6796936849364466849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590d24b4fd5de46a0adb7456fb8f446f, type: 3}
+  m_Script: {fileID: 11500000, guid: a551922f57e384cd7962548968699189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  returnTime: 2
+  silver: {fileID: 2100000, guid: d9c751b78c5de4b0f9b917e01169a472, type: 2}
+  silver1: {fileID: 2100000, guid: 5e90fefff80d145d886a3e23842abbde, type: 2}
