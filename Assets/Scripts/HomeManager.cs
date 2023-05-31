@@ -44,6 +44,7 @@ public class HomeManager : MonoBehaviour
 
     public GameObject settingCanvas;
     public GameObject helpCanvas;
+    public Scrollbar helpScrollBar;
 
     void Start()
     {
@@ -212,8 +213,9 @@ public class HomeManager : MonoBehaviour
 
     public void OnClickHelpButton()
     {
-        audioSource.PlayOneShot(clickButton);
+        audioSource.PlayOneShot(clickButton);        
         helpCanvas.SetActive(true);
+        helpScrollBar.value = 1;
     }
 
     public void OnClickSitarOffButton()
